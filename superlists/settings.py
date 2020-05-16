@@ -24,6 +24,8 @@ else:
     DEBUG = True
     SECRET_KEY = 'n#_n5pvuieb#^vc8pkwrk7q=q2rn50_dje58ah!^6r=30(3j!$'
     ALLOWED_HOSTS = []
+with open('django.log', 'a') as f:
+    print(f'setting DEBUG={DEBUG}, SECRET_KEY={SECRET_KEY}, ALLOWED_HOSTS={ALLOWED_HOSTS}', file=f)
 
 
 # Application definition
